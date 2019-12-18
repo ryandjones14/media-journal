@@ -12,5 +12,7 @@
 }
 
 .selected-media {
-  margin-top: 50px;
+  margin: 50px auto;
+  width: 65%;
+  text-align: left;
 }

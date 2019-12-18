@@ -1,11 +1,12 @@
 import React, { useParams, useState } from 'react';
+import './media.css';
 
 function Media(props) {
   const [mediaTitle, setMediaTitle] = useState('');
 
   const mediaTitles = props.type.titles.map((title) => {
     return (
-      <div className="media-title" key={title.id}>
+      <div className="title" key={title.id}>
         <p>{title.title}</p>
         <button onClick={() => deleteTitle(title.id)}>delete</button>
       </div>
@@ -27,6 +28,8 @@ function Media(props) {
   }
 
   function addTitle() {
+    if (mediaTitle === '') return;
+
     props.addMediaTitle(mediaTitle);
     setMediaTitle('');
   }
@@ -37,9 +40,9 @@ function Media(props) {
   }
 
   return (
-    <div className="media-page">
-      {/* <h2>{props.type.medium}</h2> */}
+    <div className="media">
       <input
+      className="input"
         type="text"
         placeholder="title"
         aria-label="title"
@@ -48,7 +51,9 @@ function Media(props) {
         onKeyPress={handleKeyPress}
       />
       <button onClick={addTitle}>Add</button>
-      {mediaTitles}
+      <div className="titles">
+        {mediaTitles}
+      </div>
     </div>
   );
 }
