@@ -1,0 +1,20 @@
+.media-type {
+  height: 50px;
+  width: 80%;
+  /* background: rgb(255, 246, 246); */
+  margin: 10px 20px;
+  /* border: 1px solid ; */
+  border-radius: 2%;
+  box-shadow: 2px 2px #a8ac96;
+  background-color: #c1c6ab;
+}
+
+.selected {
+  height: 55px;
+  width: 82%;
+  background-color: #bbc493;
+}
+
+ul {
+  list-style: none;
+}

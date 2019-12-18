@@ -1,22 +1,16 @@
-.App {
+.app {
   text-align: center;
+  background: linear-gradient(to bottom right,#d0acb2,34%,#cd7c57);
+  height: 100vh;
+  color: #575757;
 }
 
-.App-logo {
-  height: 40vmin;
+.media-types {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: auto 15%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+.selected-media {
+  margin-top: 50px;
 }
