@@ -1,14 +1,10 @@
 .media {
   height: 45px;
 }
-
-  input {
-    height: 100%;
-    margin-right: 10px;
-  }
-  button {
-    /* height: 100%; */
-  }
+.add-title {
+  display: flex;
+  height: 50px;
+}
 
 .titles {
   display: flex;
@@ -17,9 +13,11 @@
 }
 
 .title {
-  /* display: flex; */
+  display: flex;
   flex: 1 250px;
-  width: 50px;
   height: 50px;
-  border: 1px solid yellow;
+  margin: 10px 15px 10px 0;
 }
+  .title button {
+    margin-left: 50%;
+  }

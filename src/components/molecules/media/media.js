@@ -8,7 +8,7 @@ function Media(props) {
     return (
       <div className="title" key={title.id}>
         <p>{title.title}</p>
-        <button onClick={() => deleteTitle(title.id)}>delete</button>
+        <button onClick={() => deleteTitle(title.id)}>garbage trash icon</button>
       </div>
     );
   });
@@ -41,16 +41,18 @@ function Media(props) {
 
   return (
     <div className="media">
-      <input
-      className="input"
-        type="text"
-        placeholder="title"
-        aria-label="title"
-        value={mediaTitle}
-        onChange={handleChange}
-        onKeyPress={handleKeyPress}
-      />
-      <button onClick={addTitle}>Add</button>
+      <div className="add-title">
+        <input
+          className="input"
+          type="text"
+          placeholder="title"
+          aria-label="title"
+          value={mediaTitle}
+          onChange={handleChange}
+          onKeyPress={handleKeyPress}
+        />
+        <button onClick={addTitle}>cool plus icon</button>
+      </div>
       <div className="titles">
         {mediaTitles}
       </div>
